@@ -1,0 +1,133 @@
+<html>
+<head>
+    <style>
+        /* Centralizar o conteúdo e estilizar */
+        body {
+            background: linear-gradient(to bottom, rgb(255, 47, 47), rgb(247, 196, 137));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilizar o cabeçalho */
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Estilo para o container de cartões */
+        .content {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os cartões se movam para a linha seguinte quando não houver espaço */
+            justify-content: center; /* Centraliza os cartões horizontalmente */
+            gap: 20px; /* Espaçamento entre os cartões */
+            padding: 20px; /* Espaçamento ao redor dos cartões */
+            flex-grow: 1; /* Permite que o conteúdo cresça para preencher a área disponível */
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+            overflow: hidden;
+            transition: transform 0.3s;
+            text-align: center;
+            width: calc(25% - 20px); /* Cada cartão ocupa 25% da largura do container, menos a margem */            
+            width: 220px; /* Define uma largura mínima para o cartão */
+            height: 300px;
+            box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%; /* Faz a imagem ocupar toda a largura do cartão */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+        .card-title {
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Estilo para os links */
+        a {
+            text-decoration: none;
+            color: inherit; /* Mantém a cor do texto do cartão */
+        }
+
+        /* Estilo para o footer */
+        footer {
+            text-align: center; /* Centraliza o conteúdo no footer */
+            padding: 10px; /* Adiciona um pouco de espaçamento */
+            background-color:  rgb(255, 253, 117); /* Fundo semi-transparente */
+            border-top: 1px solid #ccc; /* Adiciona uma borda superior */
+        }
+
+        .instagram-link {
+            display: inline-flex; /* Permite que o ícone e o texto fiquem na mesma linha */
+            align-items: center; /* Centraliza verticalmente o ícone e o texto */
+            color: rgb(0, 0, 0); /* Altera a cor do texto */
+        }
+
+        .instagram-link img {
+            width: 24px; /* Tamanho do ícone do Instagram */
+            height: auto; /* Mantém a proporção do ícone */
+            margin-right: 8px; /* Espaço entre o ícone e o texto */
+        }
+
+        /* Media query para garantir que o layout se adapte a telas menores */
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px); /* Ajusta para 2 cartões por linha em telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%; /* Um cartão por linha em telas muito pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: white;">Descubra as Melhores Ofertas</h1>
+    </header>
+
+    <!-- Div para centralizar o conteúdo -->
+    <div class="content">
+        <div class="card">
+            <a href="https://s.shopee.com.br/6fP0w40iel" target="_blank">
+                <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lndjf1hg8s7g30@resize_w450_nl.webp" alt="Kit Câmera Segurança">
+                <div class="card-title">Kit Câmera Segurança Prova D'água Infravermelho Lâmpada Sem Fio Wifi - APP</div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://s.shopee.com.br/6fP0w40iel" target="_blank">
+                <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lndjf1hg8s7g30@resize_w450_nl.webp" alt="Kit Câmera Segurança">
+                <div class="card-title">Kit Câmera Segurança Prova D'água Infravermelho Lâmpada Sem Fio Wifi - APP</div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://s.shopee.com.br/6fP0w40iel" target="_blank">
+                <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lndjf1hg8s7g30@resize_w450_nl.webp" alt="Kit Câmera Segurança">
+                <div class="card-title">Kit Câmera Segurança Prova D'água Infravermelho Lâmpada Sem Fio Wifi - APP</div>
+            </a>
+        </div>              
+    </div>
+
+    <footer>
+        <a class="instagram-link" href="https://www.instagram.com/adrieljcardoso?igsh=MTViNjRmNXAycTQ2bQ==" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            <span>@adrieljcardoso</span>
+        </a>
+    </footer>
+</body>
+</html>
